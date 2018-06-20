@@ -8,22 +8,36 @@ var colors = [
 ]
 
 var squares = document.querySelectorAll('.square');
-var pickedColor = colors[3];
+var pickedColor = pickColor();
 var colorDisplay = document.getElementById('colorDisplay');
+var messageDisplay = document.getElementById('message');
 
 colorDisplay.textContent = pickedColor;
 
-for(var i = 0; i < squares.length; i++) {
+for (var i = 0; i < squares.length; i++) {
     // add initial colors to squres
     squares[i].style.backgroundColor = colors[i]
 
     // add click listeners to squares
-    squares[i].addEventListener('click', function(){
+    squares[i].addEventListener('click', function () {
         var clickedColor = this.style.backgroundColor;
         if (clickedColor === pickedColor) {
-            alert('correct')
+            messageDisplay.textContent = 'Correct !'
+            changeColors(clickedColor);
         } else {
-            alert('wrong')
-        } 
+            this.style.backgroundColor = '#232323';
+            messageDisplay.textContent = 'Wrong Answer !'
+        }
     })
+}
+
+function changeColors(color) {
+    for (var i = 0; i < squares.length; i++) {
+        squares[i].style.backgroundColor = color;
+    }
+}
+
+function pickColor() {
+    var randomIndex = Math.floor(Math.random() * colors.length)
+    return colors[randomIndex]
 }
