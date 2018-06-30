@@ -19,13 +19,13 @@ h1 {
     max-width: 600px;
 }
 
-#colorDisplay {
-    background-color: #232323;
-}
-
 #stripe {
     background-color: white;
     color: black;
     height: 30px;
     text-align: center;
+}
+
+.selected {
+    background-color: blue;
 }
