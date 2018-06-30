@@ -6,16 +6,12 @@ h1 {
     color: white;
 }
 
-span {
-    background-color: white;
-}
-
 .square {
-    width: 30%;
     background: purple;
-    padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+    padding-bottom: 30%;
+    width: 30%;
 }
 
 #container {
@@ -25,4 +21,11 @@ span {
 
 #colorDisplay {
     background-color: #232323;
+}
+
+#stripe {
+    background-color: white;
+    color: black;
+    height: 30px;
+    text-align: center;
 }
