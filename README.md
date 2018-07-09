@@ -1,4 +1,4 @@
-# color_game_js
+# RGB Colors Guessing Game
 
 **The RGB colors guessing game. Made in JavaScript**
 
