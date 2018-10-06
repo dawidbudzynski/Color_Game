@@ -1,8 +1,13 @@
 # RGB Colors Guessing Game
 
-**The RGB colors guessing game. Made in JavaScript**
+## General info
+The RGB colors guessing game
 
-**Link to the website:**
+## Technologies
+* JavaScript
+
+## Demo
+
 **https://dawidbudzynski.github.io/color_game_js/**
 
 ![alt text](https://raw.githubusercontent.com/dawidbudzynski/color_game_js/master/examples/example.gif)
